@@ -1,0 +1,113 @@
+/*styles :) variables de color de texto*/
+.main-content {
+    width: 100%;
+    .coffee {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__image {
+        width: 90%;
+            //flex: 5;
+          display: flex;
+          }
+
+        &__open {
+            width: 100%;
+            //  height: auto;
+
+        }
+
+        &__title {
+            margin: 0 0 1rem;
+            font-size: $font-size-xxx-large;
+            width: 60px;
+        }
+
+        &__subtitle {
+            margin: 0;
+            font-family: $font-family-secondary;
+            font-size: $font-size-large;
+            font-weight: $font-weight-normal;
+        }
+
+        &__content {
+            padding-left: 70px;
+        }
+    }
+
+    .stats {
+        position: relative;
+        display: flex;
+        gap: 15px;
+        padding: 2rem;
+        background-color: $color-background;
+        text-align: center;
+        height: 100px;
+        width: 500px;
+        margin-top: -168px;
+        margin-left: 480px;
+
+        &__number {
+            font-size: $font-size-xx-large;
+            color: #000000;
+            margin-top: 0px;
+        }
+
+        &__text {
+            font-family: $font-family-secondary;
+            font-size: $font-size-medium;
+            font-weight: $font-weight-normal;
+            color: $color-text;
+            max-width: 132px;
+            margin-top: -20px;
+        }
+    }
+}
+
+.arrow {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    &__wrapper {
+        position: absolute;
+        top: 35%;
+        transform: translateY(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+    }
+
+    &__box {
+        background-color: $five-color;
+        width: 150px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__span {
+        font-size: $font-size-xxx-large;
+        color: white;
+    }
+
+    &__bg {
+        background-color: $four-color;
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        z-index: 2;
+        transform: translate(25px, 32px);
+    }
+
+}
+

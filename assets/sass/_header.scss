@@ -1,0 +1,68 @@
+/* header :) background*/
+.header {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    position: static;
+    margin-top: 25px;
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+
+        &__list {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            //padding: 0;
+            padding-left: 60px;
+        }
+
+        &__item {
+            margin-right: 1rem;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        &__logo {
+            height: 40px;
+            width: 40px;
+        }
+
+        &__link {
+            text-decoration: none;
+            color: $color-text-secondary;
+            font-size: $font-size-medium;
+            font-weight: $font-weight-medium;
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+
+        &__buttons {
+            margin-right: 80px;
+        }
+
+
+        &__login--white {
+            background: #fff;
+            width: 150px;
+            height: 30px;
+            color: $color-text-secondary;
+            font-size: $font-size-medium;
+            font-weight: $font-weight-normal;
+        }
+
+        &__register--green {
+            background: $secondary-color;
+            color: $color-text-terciary;
+            width: 150px;
+            height: 30px;
+            font-size: $font-size-medium;
+            font-weight: $font-weight-normal;
+        }
+    }
+}
